@@ -1,0 +1,109 @@
+# ==============================================================================
+# PYTHON COMPILATION & BYTECODE
+# ==============================================================================
+# Compiled python byte-code files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging tools
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ==============================================================================
+# VIRTUAL ENVIRONMENTS
+# ==============================================================================
+# Default virtual environments
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# Poetry, Pipenv, and Hatch environments
+.poetry/
+.pipenv/
+.hatch/
+
+# Anaconda environments
+.conda/
+conda-bld/
+
+# ==============================================================================
+# ENVIRONMENT VARIABLES & SENSITIVE DATA
+# ==============================================================================
+# Local configuration files containing API keys, database URLs, etc.
+.env
+.env.*
+!.env.example
+secret.json
+secrets.toml
+
+# ==============================================================================
+# TESTING & CODE QUALITY
+# ==============================================================================
+# Testing frameworks
+.pytest_cache/
+.tox/
+.nox/
+.coverage
+htmlcov/
+.cache/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# Linting, formatting, and type-checking
+.mypy_cache/
+.ruff_cache/
+.black/
+.pyre/
+.pytype/
+
+# ==============================================================================
+# IDEs & CODE EDITORS
+# ==============================================================================
+# VS Code
+.vscode/
+!.vscode/extensions.json
+
+# PyCharm / IntelliJ
+.idea/
+
+# Jupyter Notebooks checkpoint folders
+.ipynb_checkpoints
+
+# ==============================================================================
+# SYSTEM CLUTTER
+# ==============================================================================
+# macOS files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+[Dd]esktop.ini
