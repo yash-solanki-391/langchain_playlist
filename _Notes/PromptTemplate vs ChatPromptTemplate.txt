@@ -1,0 +1,127 @@
+PromptTemplate vs ChatPromptTemplate — Notes
+1. PromptTemplate
+
+PromptTemplate is used to create a single formatted text prompt.
+
+It works like Python f-strings but is specially designed for LLM applications.
+
+Example
+from langchain_core.prompts import PromptTemplate
+
+prompt = PromptTemplate(
+    input_variables=["topic"],
+    template="Explain {topic} in simple words."
+)
+
+result = prompt.format(topic="API")
+Output
+Explain API in simple words.
+Use Cases
+Simple text generation
+Summarization
+Basic Q&A
+Small LLM applications
+Older completion models
+Key Point
+
+PromptTemplate produces:
+
+str
+
+meaning a single plain text string.
+
+2. ChatPromptTemplate
+
+ChatPromptTemplate is used for chat-based LLMs like:
+
+ChatGPT
+Claude
+Gemini
+Llama chat models
+
+Instead of creating one string, it creates structured chat messages.
+
+Example
+from langchain_core.prompts import ChatPromptTemplate
+
+prompt = ChatPromptTemplate.from_messages([
+    ("system", "You are a helpful assistant"),
+    ("human", "Explain {topic}")
+])
+
+result = prompt.invoke({
+    "topic": "API"
+})
+Internal Structure
+System: You are a helpful assistant
+Human: Explain API
+Use Cases
+Chatbots
+AI assistants
+Agents
+RAG applications
+Conversation systems
+Memory-based applications
+Key Point
+
+ChatPromptTemplate produces:
+
+ChatPromptValue
+
+which contains message objects like:
+
+SystemMessage
+HumanMessage
+AIMessage
+Main Difference
+Feature	PromptTemplate	ChatPromptTemplate
+Output Type	Single string	Structured chat messages
+Best For	Simple prompts	Chat applications
+Supports Roles	No	Yes
+Supports System Prompt	No	Yes
+Supports Chat History	No	Yes
+Used With Modern Chat Models	Limited	Yes
+Industry Usage Today	Less	Very common
+Simple Mental Model
+PromptTemplate
+    = One formatted string
+
+ChatPromptTemplate
+    = Full conversation structure
+When to Use
+Use PromptTemplate
+
+When:
+
+You only need one prompt
+Building small/simple apps
+Learning LangChain basics
+
+Example:
+
+"Explain Docker"
+Use ChatPromptTemplate
+
+When:
+
+Building chatbots
+Using OpenAI/Claude/Gemini chat models
+Working with agents or memory
+Managing system instructions
+
+Example:
+
+System: You are a coding assistant
+Human: Explain Docker
+Important Industry Note
+
+Most modern AI applications now prefer:
+
+ChatPromptTemplate
+
+because almost all modern LLM APIs are chat-based.
+
+One-Line Summary
+PromptTemplate → creates one formatted text string
+
+ChatPromptTemplate → creates structured chat conversations

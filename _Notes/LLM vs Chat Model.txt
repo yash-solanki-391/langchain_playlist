@@ -1,0 +1,25 @@
+LLM vs Chat Model
+These terms are often used interchangeably, but they refer to different things:
+LLM (Large Language Model)
+A base/foundation model trained to predict the next token in a sequence. It takes raw text in and continues it.
+
+Input: a text prompt → Output: a text completion
+Example: given "The capital of France is", it outputs "Paris"
+No concept of "conversation" or "roles"
+Examples: GPT-3 (base), Llama 2 (base), Mistral (base)
+
+Chat Model
+A fine-tuned version of an LLM, specifically trained to handle back-and-forth conversations.
+
+Built on top of an LLM using techniques like RLHF (Reinforcement Learning from Human Feedback) or instruction tuning
+Understands structured roles: system, user, assistant
+Designed to follow instructions, refuse harmful requests, and maintain context across turns
+Examples: ChatGPT (gpt-4), Claude, Gemini
+
+
+Key Differences
+FeatureLLM (Base)Chat ModelTrainingNext-token predictionRLHF / Instruction tuningInput formatPlain textStructured messages (roles)Conversation awareNoYesFollows instructionsWeaklyStronglySafety alignmentMinimalBuilt-inUse caseText completion, researchAssistants, Q&A, agents
+
+Simple Analogy
+Think of an LLM as a raw, highly knowledgeable brain that just autocompletes text — like a very advanced autocomplete. A Chat Model is that same brain after being trained to behave like a helpful, conversational assistant.
+In frameworks like LangChain, this distinction is explicit — LLM and ChatModel are separate classes with different interfaces precisely because of how you interact with them.
