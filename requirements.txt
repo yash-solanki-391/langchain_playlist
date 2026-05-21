@@ -11,3 +11,6 @@ huggingface-hub
 python-dotenv
 numpy
 scikit-learn
+pypdf
+langchain-community
+beautifulsoup4

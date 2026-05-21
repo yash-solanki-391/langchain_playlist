@@ -1,0 +1,21 @@
+player_id,player_name,team,role,matches,runs,wickets,strike_rate
+1,Virat Kohli,England,Batsman,115,7570,298,70.41
+2,Rohit Sharma,Pakistan,Wicketkeeper,101,9316,218,88.6
+3,MS Dhoni,Pakistan,All-Rounder,52,8649,325,179.49
+4,Hardik Pandya,England,Bowler,33,1594,320,149.55
+5,KL Rahul,England,Wicketkeeper,69,10600,194,122.9
+6,Shubman Gill,Australia,Wicketkeeper,30,11744,359,96.85
+7,Jasprit Bumrah,Pakistan,All-Rounder,43,1706,372,134.41
+8,Ravindra Jadeja,England,Wicketkeeper,98,10686,186,144.08
+9,Suryakumar Yadav,England,All-Rounder,28,11689,31,111.29
+10,Rishabh Pant,New Zealand,Bowler,124,4898,244,171.06
+11,Ben Stokes,Pakistan,Batsman,49,4725,87,132.18
+12,Joe Root,India,Batsman,178,1082,307,87.33
+13,Steve Smith,India,Wicketkeeper,59,2072,387,101.0
+14,David Warner,New Zealand,Batsman,141,11327,263,153.39
+15,Kane Williamson,India,All-Rounder,159,4061,255,99.77
+16,Babar Azam,Pakistan,Wicketkeeper,43,4056,130,149.08
+17,Shaheen Afridi,India,Bowler,107,11587,56,124.13
+18,Jos Buttler,England,Bowler,103,10360,196,162.0
+19,Glenn Maxwell,Australia,Batsman,42,8039,48,139.28
+20,Trent Boult,New Zealand,Bowler,137,1776,341,162.25
